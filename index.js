@@ -1,6 +1,8 @@
 let point2 = 0
 let point1 = 0
 let round = 0
+let lucky1 = 0
+let lucky2 = 0
 var playerRound = prompt('how many rounds would you like to play?')
 if(isNaN(playerRound)){
   console.log('that is not a number. please enter a number')
@@ -16,6 +18,7 @@ let dice2 = Math.floor(Math.random() * 6 + 1);
 var play1 = prompt('player 1, would you like to roll the dice: yes or no:')
 if (play1 == 'yes'){
 console.log('here we go')
+
 console.log('you rolled a ' + dice1)
 }
 else if(play1 == 'no'){
@@ -30,6 +33,9 @@ else{
 	if (dice1 = 2){
   console.log('you get an extra point for rolling a two')
   point1++
+}
+if (dice1 = 6){
+lucky1++
 }
   
 
@@ -53,7 +59,9 @@ if (dice2=2){
   point2++
 }
   
-
+if (dice2=2){
+  lucky2++
+}
 
 if(dice1 < dice2){
   console.log('player 2 wins this round!')
@@ -81,4 +89,13 @@ else if(point1>point2){
 }
 else{
   console.log('it was a tie!')
+}
+if(lucky1<lucky2){
+  console.log('player 2 got more sixes. They got ' + lucky2 + ' sixes')
+}
+else if(lucky1>lucky2){
+  console.log('player 1 got more sixes. They got ' + lucky1 + ' sixes')
+}
+else{
+  console.log('you got the same amount of sixes')
 }
