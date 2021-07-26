@@ -30,13 +30,13 @@ else{
   play1 = prompt('would you like to roll the dice: yes or no:')
 }
 
-	if (dice1 = 2){
-  console.log('you get an extra point for rolling a two')
-  point1++
-}
-if (dice1 = 6){
-lucky1++
-}
+// 	if (dice1 = 2){
+//   console.log('you get an extra point for rolling a two')
+//   point1++
+// }
+// if (dice1 = 6){
+// lucky1++
+// }
   
 
 
@@ -54,14 +54,14 @@ else{
   play2 = prompt('would you like to roll the dice: yes or no:')
 }
 
-if (dice2=2){
-  console.log('you get an extra point for rolling a two')
-  point2++
-}
+// if (dice2=2){
+//   console.log('you get an extra point for rolling a two')
+//   point2++
+// }
   
-if (dice2=2){
-  lucky2++
-}
+// if (dice2=6){
+//   lucky2++
+// }
 
 if(dice1 < dice2){
   console.log('player 2 wins this round!')
