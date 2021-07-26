@@ -4,8 +4,8 @@ let round = 0
 let lucky1 = 0
 let lucky2 = 0
 var playerRound = prompt('how many rounds would you like to play?')
-if(isNaN(playerRound)){
-  console.log('that is not a number. please enter a number')
+while(isNaN(playerRound)||(playerRound<1)){
+  console.log('that is not a valid number. please enter a number')
   playerRound = prompt('how many rounds would you like to play?')
 }
 
