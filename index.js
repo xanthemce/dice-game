@@ -20,13 +20,17 @@ console.log('you rolled a ' + dice1)
 }
 else if(play1 == 'no'){
   console.log('okay thanks for playing')
+  break;
 }
 else{
   console.log('that is an invalid input. Please enter yes or no')
   play1 = prompt('would you like to roll the dice: yes or no:')
 }
 
-	
+// 	if (dice1 = 2){
+//   console.log('your points have been doubled for rolling a two')
+//   point1 = point1*2
+// }
   
 
 
@@ -37,13 +41,17 @@ console.log('you rolled a ' + dice2)
 }
 else if(play2 == 'no'){
   console.log('okay thanks for playing')
+  break;
 }
 else{
   console.log('that is an invalid input. Please enter yes or no')
   play2 = prompt('would you like to roll the dice: yes or no:')
 }
 
-
+// if (dice2=2){
+//   console.log('your points have been doubled for rolling a two')
+//   point2 = point2*2
+// }
   
 
 
