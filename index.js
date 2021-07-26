@@ -27,10 +27,10 @@ else{
   play1 = prompt('would you like to roll the dice: yes or no:')
 }
 
-// 	if (dice1 = 2){
-//   console.log('your points have been doubled for rolling a two')
-//   point1 = point1*2
-// }
+	if (dice1 = 2){
+  console.log('you get an extra point for rolling a two')
+  point1++
+}
   
 
 
@@ -48,10 +48,10 @@ else{
   play2 = prompt('would you like to roll the dice: yes or no:')
 }
 
-// if (dice2=2){
-//   console.log('your points have been doubled for rolling a two')
-//   point2 = point2*2
-// }
+if (dice2=2){
+  console.log('you get an extra point for rolling a two')
+  point2++
+}
   
 
 
