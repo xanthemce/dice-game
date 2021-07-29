@@ -1,15 +1,19 @@
+//explains how the game works
 console.log('welcome to the dice game. roll the digital dice and compete for the highest roll. If you roll a 2 your points will be doubled (unless you had 0 points to start with), and sixes are counted up and the player with the most gets 2 extra points at the end. If at any point you wish to stop the game, just say no when you are asked to roll again.')
-
+//sets what the values in the list called dice are
 dice = [1, 2, 3, 4, 5, 6,]
+//makes length the length of the dice list
 let length = dice.length
-
+//picks a random number 
 roll1= Math.floor(Math.random() * length + 0)
+//takes the corresponding value from the list and assigns it number1
 number1= (dice[roll1])
+//does the same but for player 2
 roll2=Math.floor(Math.random() * length + 0)
 number2=(dice[roll2])
 
 
-
+//sets all the neccessary values to 0
 let point2 = 0
 let point1 = 0
 let round = 0
@@ -23,7 +27,7 @@ while((isNaN(playerRound))||(playerRound<1)||(playerRound == null)||(playerRound
 
 
 do{
-// let dice1 = Math.floor(Math.random() * 6 + 1);
+
 roll1= Math.floor(Math.random() * length + 0)
 number1= (dice[roll1])
 roll2=Math.floor(Math.random() * length + 0)
@@ -49,15 +53,7 @@ if(number1==6){
   lucky1++
   console.log('ooo lucky player 1 got a six!')
 }
-// if(dice1=2){
-//   console.log('you rolled a ' + dice1)
-//   point1++
-//   console.log('you get an extra point for rolling a two!')
-  
-// }
-// else{
-//   console.log('you rolled a ' + dice1)
-// }
+
 }
 else if(play1 == 'no'){
   console.log('okay thanks for playing')
@@ -70,15 +66,6 @@ else{
 
 
 
-// 	if (dice1 = 2){
-//   console.log('you get an extra point for rolling a two')
-//   point1++
-// }
-// if (dice1 = 6){
-// lucky1++
-// }
-  
-// let dice2 = Math.floor(Math.random() * 6 + 1);
 
 var play2 = prompt('player 2, would you like to roll the dice: yes or no:')
 if (play2 == 'yes'){
@@ -106,14 +93,7 @@ else{
   play2 = prompt('would you like to roll the dice: yes or no:')
 }
 
-// if (dice2=2){
-//   console.log('you get an extra point for rolling a two')
-//   point2++
-// }
-  
-// if (dice2=6){
-//   lucky2++
-// }
+
 
 if(number1 < number2){
   console.log('player 2 wins this round!')
@@ -160,12 +140,3 @@ else{
 
 console.log('player 1 got ' + point1 + ' points')
 console.log('player 2 got ' + point2 + ' points')
-// if(lucky1<lucky2){
-//   console.log('player 2 got more sixes. They got ' + lucky2 + ' sixes')
-// }
-// else if(lucky1>lucky2){
-//   console.log('player 1 got more sixes. They got ' + lucky1 + ' sixes')
-// }
-// else{
-//   console.log('you got the same amount of sixes')
-// }
